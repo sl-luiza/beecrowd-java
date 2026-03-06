@@ -1,0 +1,29 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner cs = new Scanner(System.in);
+        
+        int codigo1, pecas1;
+        double preco1;
+        
+        int codigo2, pecas2;
+        double preco2;
+        
+        codigo1= cs.nextInt();
+        pecas1= cs.nextInt();
+        preco1= cs.nextDouble();
+        
+        codigo2= cs.nextInt();
+        pecas2= cs.nextInt();
+        preco2= cs.nextDouble();
+        
+        double total = (pecas1 * preco1) + (pecas2 *preco2);
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", total);
+ 
+    
+    }
+ 
+}
