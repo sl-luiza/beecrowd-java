@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+
+        int numeroFuncionario;
+        int horasTrabalhadas;
+        double valorHora;
+        double salario;
+
+        //imput
+        numeroFuncionario = sc.nextInt();
+        horasTrabalhadas = sc.nextInt();
+        valorHora = sc.nextDouble();
+
+        salario = horasTrabalhadas * valorHora;
+        
+        //output
+        System.out.println("NUMBER = " + numeroFuncionario);
+        System.out.printf("SALARY = U$ %.2f%n", salario);
+
+        sc.close();
+ 
+
+ 
+    }
+ 
+}
